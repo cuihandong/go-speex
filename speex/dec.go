@@ -20,11 +20,12 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 // The speex decoder, to decode the encoded speex frame to PCM samples.
+//LDFLAGSkkk: -static-libstdc++ -static-libgcc 
 package speex
 
 /*
 #cgo CFLAGS: -I${SRCDIR}/../speex-lib/include
-#cgo LDFLAGS: -static-libstdc++ -static-libgcc -L${SRCDIR}/../speex-lib/lib -llibspeex
+#cgo linux LDFLAGS: -static-libstdc++ -static-libgcc ${SRCDIR}/../speex-lib/lib/linux/libspeex.a -lm
 #include "speex/speex.h"
 
 typedef struct {
