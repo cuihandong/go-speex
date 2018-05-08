@@ -24,7 +24,7 @@ package speex_test
 
 import (
 	"testing"
-	"github.com/winlinvip/go-speex/speex"
+	"github.com/cuihandong/go-speex/speex"
 )
 
 func TestSpeexInit(t *testing.T) {

@@ -23,7 +23,7 @@ package speex_test
 
 import (
 	"fmt"
-	"github.com/winlinvip/go-speex/speex"
+	"github.com/cuihandong/go-speex/speex"
 )
 
 func ExampleSpeexDecoder() {

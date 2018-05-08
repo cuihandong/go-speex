@@ -23,8 +23,8 @@
 package speex
 
 /*
-#cgo CFLAGS: -I${SRCDIR}/../speex-lib/objs/include
-#cgo LDFLAGS: ${SRCDIR}/../speex-lib/objs/lib/libspeex.a -lm
+#cgo CFLAGS: -I${SRCDIR}/../speex-lib/include
+#cgo LDFLAGS: -static-libstdc++ -static-libgcc -L${SRCDIR}/../speex-lib/lib -llibspeex
 #include "speex/speex.h"
 
 typedef struct {
