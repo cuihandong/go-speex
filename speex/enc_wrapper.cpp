@@ -20,7 +20,7 @@ int speex_enc_process_out(speex_encoder enc, int end, unsigned char ** data)
     SpeexEncoder* encoder = (SpeexEncoder*)enc;
     std::vector<char> res = encoder->ProcessOut(end!=0);
     *data = new unsigned char[res.size()];
-    memcpy(data,res.data(),res.size());
+    memcpy(*data,res.data(),res.size());
     return res.size();
 }
 

@@ -25,7 +25,7 @@ package speex
 
 /*
 #cgo CFLAGS: -I${SRCDIR}/../speex-lib/include
-#cgo linux LDFLAGS: -static-libstdc++ -static-libgcc ${SRCDIR}/../speex-lib/lib/linux/libspeex.a -lm
+#cgo linux LDFLAGS:  ${SRCDIR}/../speex-lib/lib/linux/libspeex.a -lm
 #include "speex/speex.h"
 
 typedef struct {
@@ -37,6 +37,7 @@ typedef struct {
 	int sample_rate;
 } speexdec_t;
 
+//#cgo linux LDFLAGS: -static-libstdc++ -static-libgcc ${SRCDIR}/../speex-lib/lib/linux/libspeex.a -lm
 int speexdec_init(speexdec_t* h, int sample_rate, int channels) {
 	h->mode = 0;
 	h->state = 0;
